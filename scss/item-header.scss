@@ -1,0 +1,43 @@
+.item-header {
+	margin-bottom: 60px;
+	&__h1 {
+		text-transform: uppercase;
+		font-size: 30px;
+		margin-bottom: 30px;
+		font-weight: bold;
+	}
+	.item-menu {
+		display: flex;
+		&__element {
+			padding-left: 25px;
+			text-transform: uppercase;
+			margin-right: 10px;
+			position: relative;
+		}
+		&__element:first-child {
+			padding-left: 0;
+		}
+		&__element:first-child:before{
+			content: none;
+		}
+		&__element:before{
+			content: "";
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			background-color: black;
+			top: 30%;
+		    left: 0;
+		    transform: rotate(45deg);
+		}
+		&__element-link {
+			padding: 0;
+			color: black;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		&__element-link:active {
+			color: #ABA9A7;
+		}
+	}
+}

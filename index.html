@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Borodinsky</title>
+  <link rel="stylesheet" href="css/style.css">
+   
+<body>
+<div class="overlay"></div>
+  <header class="main-header clearfix">
+    <div class="container">
+      <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Информация</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Новости</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Прайс-лист</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Магазин</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+      </ul>
+      </nav>
+      <div class="main-header__user-block"><a href="#" class="main-header__enter">Вход</a></div>
+    </div>
+  </header>
+  <form class="enter-form">
+    <span class="enter-form__exit"></span>
+    <p class="title">Личный кабинет</p>
+    <p class="enter-form__instruction">Введите пожалуйста свой логин и пароль</p>
+    <div class="enter-form__login-wrapper">
+      <input type="text" class="enter-form__login" placeholder="Логин">
+    </div>
+    <div class="enter-form__password-wrapper">
+      <input type="text" class="enter-form__password" placeholder="Пароль">
+    </div>
+    <div class="enter-form__options">
+      <input type="checkbox" class="checkbox" id="enter-form__remember">
+      <label for="enter-form__remember">ЗАПОМНИТЕ МЕНЯ</label>
+      <a class="enter-form__forget">Я забыл пароль</a>
+    </div>
+    <button type="submit">Войти</button>
+  </form>
+  <main class="index">
+    <div class="logo">
+      <div class="logo__img">
+        <a href="" class="logo__link">
+          <img src="img/logo.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <section class="advantages">
+        <div class="advantages__item">
+          <span class="title title--white">Быстро</span>
+          <p class="advantages__text"> ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДЕТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ</p>
+        </div>
+        <div class="advantages__item">
+          <span class="title title--white">Круто</span>
+          <p class="advantages__text">ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
+    МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!</p>
+        </div>
+        <div class="advantages__item">
+          <span class="title title--white">Дорого</span>
+          <p class="advantages__text">НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
+        </div>
+      </section>
+      <section class="index-block">
+        <section class="index-block__section">
+          <h2 class="title">Новости</h2>
+          <div class="index-block__post">
+            <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+            <time>25 сентября</time>
+          </div>
+          <div class="index-block__post">
+            <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДЕТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+            <time>25 сентября</time>
+          </div>
+          <a href="#" class="btn">Все новости</a>
+        </section>
+        <section class="index-block__section">
+          <h2 class="title">Галлерея</h2>
+          <div class="index-block__gallery-img">
+              <img src="img/gallery.jpg" alt="">
+              <img  class ="index-block__gallery-enabled" src="img/gallery.jpg" alt="">
+              <img src="img/gallery.jpg" alt="">
+              <img src="img/gallery.jpg" alt="">
+              <img src="img/gallery.jpg" alt="">
+              <img src="img/gallery.jpg" alt="">
+          </div>
+          <div class="index-block__gallery-navigation clearfix">
+            <a href="#" class="btn js-prev">Назад</a>
+            <a href="#" class="btn js-next">Вперёд</a>
+          </div>
+        </section>
+      </section>
+      <section class="index-block">
+        <section class="index-block__section">
+          <h2 class="title">Контактная информация</h2>
+          <div class="index-block__contacts">      
+            <p> БАРБЕРШОП «БОРОДИНСКИЙ»</p>
+            <p>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8</p>
+            <p>ТЕЛЕФОН: +7 (495) 666-02-66</p>
+          </div>
+          <div class="index-block__working-time">
+            <p> ВРЕМЯ РАБОТЫ: </p>
+            <p>ПН — ПТ: С 10:00 ДО 22:00</p>
+            <p>СБ — ВС: С 10:00 ДО 19:00</p>
+          </div>
+          <div class="index-block__contact-btns">
+            <a href="#" class="btn">Как проехать</a>
+            <a href="#" class="btn">Обратная связь</a>
+          </div>
+        </section>
+        <div class="index-block__section">
+          <h2 class="title">Записаться</h2>
+          <p class="index-block__order-text">Укажите желаемую дату и время и мы свяжемся с вам для подтверждения брони</p>
+          <form action="" class="index-block__order-form">
+            <input type="text" class="index-block__field" placeholder="Дата">
+            <input type="text" class="index-block__field" placeholder="Время">
+            <input type="text" class="index-block__field" placeholder="Ваше имя">
+            <input type="text" class="index-block__field" placeholder="Телефон">
+            <button class="btn btn--big">Отправить</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="main-footer__contacts">
+        <p>БАРБЕРШОП «БОРОДИНСКИЙ»</p>
+        <p>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8</p>
+        <a href="#">КАК НАС НАЙТИ?</a>
+        <p>Телефон 8 800 555 35 35</p>
+      </div>
+      <div class="main-footer__social">
+        <p>Давайте дружить</p>
+        <div class="social">
+          <a href="#" class="social__link social__vk"></a>
+          <a href="#" class="social__link social__fb"></a>
+          <a href="#" class="social__link social__inst"></a>
+        </div>
+      </div>
+      <div class="main-footer__copy">
+        <div class="main-footer__copy-wrapper">
+          <p>Разработано</p>
+          <a href="#" class="btn">HTMLACADEMY.RU</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  
+</body>
+</html>

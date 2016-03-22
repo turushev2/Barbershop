@@ -1,0 +1,27 @@
+.title{
+	font-size: 30px;
+	color: $black;
+	display: block;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 42px;
+	&--white{
+		margin-bottom: 80px;
+		color: $white;
+		position: relative;
+		&:after{
+			content: "";
+			position: absolute;
+			left: 50%;
+			transform:translateX(-50%) rotate(45deg);
+			bottom: -35px;
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			border-radius: 1px;
+			background-color: $white;
+
+		}
+	}
+}

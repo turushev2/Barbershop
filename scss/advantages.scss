@@ -1,0 +1,12 @@
+.advantages{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 80px;
+	&__item{
+		box-sizing: border-box;
+		width: 280px;
+		text-align: center;
+		color: $white;
+		font-size: 14px;
+	}
+}

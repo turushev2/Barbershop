@@ -1,0 +1,156 @@
+	input[type="text"]::-webkit-input-placeholder {color: $black; font-weight: bold; font-family: PTSans; font-size: 14px; transition:0.3s all ease;}
+	input[type="text"]::-moz-placeholder          {color: $black; font-weight: bold; font-family: PTSans; font-size: 14px; transition:0.3s all ease;}
+	input[type="text"]:-moz-placeholder           {color: $black; font-weight: bold; font-family: PTSans; font-size: 14px; transition:0.3s all ease;}
+	input[type="text"]:-ms-input-placeholder      {color: $black; font-weight: bold; font-family: PTSans; font-size: 14px; transition:0.3s all ease;}
+
+	input[type="text"]:focus::-webkit-input-placeholder {opacity: 0;}
+	input[type="text"]:focus::-moz-placeholder          {opacity: 0;}
+	input[type="text"]:focus:-moz-placeholder           {opacity: 0;}
+	input[type="text"]:focus:-ms-input-placeholder      {opacity: 0;}
+
+.overlay{
+		position: fixed;
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		opacity: 0.3;
+		z-index: 99;
+		display: none;
+		&--enabled{
+			display: block;
+		}
+	}
+
+.enter-form{
+	position: fixed;
+	display: none;
+	top:120px;
+	left: 50%;
+	transform:translateX(-50%);
+	width: 500px;
+	background-color: $white;
+	padding: 50px 75px;
+	box-sizing: border-box;
+	z-index: 999;
+	text-transform: uppercase;
+	
+	&--enabled{
+		top:120px;
+		display: block;
+		animation: bounce 1s;
+		animation-fill-mode: forwards;
+	}
+	&--disabled{
+		animation: bounce_revert 1s;
+	}
+	&--validate{
+		animation: dribble 0.5s;
+	}
+	&__exit{
+		background-image: url(../img/cansel.png);
+		background-repeat: no-repeat;
+		width: 25px;
+		height: 25px;
+		display: inline-block;
+		position: absolute;
+		right: -35px;
+		top: 5px;
+		cursor: pointer;
+	}
+	&__instruction{
+		margin-bottom: 15px;
+	}
+	.title{
+		margin-bottom: 30px;
+	}
+	input[type="text"]{
+		width: 100%;
+		height: 40px;
+		padding: 15px;
+		line-height: 15px;
+		box-sizing: border-box;
+		margin-bottom: 10px;
+		border: 2px solid #000;
+		outline: none;
+	}
+
+	input.enter-form__password{
+		margin-bottom: 15px;
+	}
+	&__password-wrapper{
+		position: relative;
+	}
+	&__password-wrapper:after{
+		position: absolute;
+		right: 15px;
+		top: 12px;
+		background-repeat: no-repeat;
+		content: "";
+		width: 20px;
+		height: 20px;
+		background-image: url(../img/password.png);
+	}
+	&__login-wrapper{
+		position: relative;
+	}
+	&__login-wrapper:after{
+		position: absolute;
+		right: 15px;
+		top: 12px;
+		background-repeat: no-repeat;
+		content: "";
+		width: 20px;
+		height: 20px;
+		background-image: url(../img/user.png);
+	}
+	&__options{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 15px;
+	}
+	input[type="checkbox"]{
+		display: none;
+	}
+	label[for="enter-form__remember"]{
+	font-size: 14px;
+	position: relative;
+	margin-left: 30px;
+	cursor: pointer;
+	}
+	label[for="enter-form__remember"]:before{
+	content: "";
+
+	position: absolute;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #000;
+	left: -30px;
+	}
+	input:checked + label[for="enter-form__remember"]:after{
+	content: "";
+	background-image: url(../img/checkbox.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	top: 6px;
+	left: -24px;
+	}
+	&__forget{
+		cursor: pointer;
+		border-bottom: 1px solid $grey-light;
+	}
+	button[type="submit"]{
+		width: 100%;
+		padding: 15px 0px;
+		background-color: $black;
+		text-align: center; 
+		border: none;
+		color: $white;
+		cursor: pointer;
+	}
+	
+}

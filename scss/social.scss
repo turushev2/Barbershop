@@ -1,0 +1,47 @@
+.social{
+	padding: 20px 0px;
+	&__link{
+		display: inline-block;
+		width: 35px;
+		height: 35px;
+		background-color: $black;
+
+	}
+	&__vk,&__fb,&__inst{
+		position: relative;
+	}
+	&__vk:before{
+		content: "";
+		display: inline-block;
+		background-image: url(../img/vk.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 35px;
+		height: 35px;
+		top: 10px;
+		left: 5px;
+	}
+	&__fb:before{
+		content: "";
+		display: inline-block;
+		background-image: url(../img/f.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 35px;
+		height: 35px;
+		top: 5px;
+		left: 10px;
+	}
+	&__inst:before{
+		content: "";
+		display: inline-block;
+		background-image: url(../img/inst.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 35px;
+		height: 35px;
+		top: 5px;
+		left: 7px;
+	}
+
+}
