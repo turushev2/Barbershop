@@ -17,6 +17,9 @@
 		&__element:first-child {
 			padding-left: 0;
 		}
+		&__element:last-child a{
+			color: #ABA9A7;
+		}
 		&__element:first-child:before{
 			content: none;
 		}

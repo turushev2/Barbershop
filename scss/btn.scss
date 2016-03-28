@@ -8,8 +8,25 @@
 	color: $white;
 	border: none;
 	font-size: 14px;
+	transition:.4s;
 	&--big{
 		width: 100%;
 		margin-top: 30px;
 	}
+	&--small{
+		width: 80px;
+		box-sizing: border-box;
+		text-transform: uppercase;
+		padding: 15px 15px;
+
+	}
+	&--pagination{
+		width: 40px;
+		line-height: 10px;
+		height: 40px;
+		box-sizing: border-box;
+	}
+}
+.btn:hover,.btn:hover {
+	background-color: #663D15;
 }

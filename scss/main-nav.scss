@@ -3,6 +3,9 @@
 	&__list{
 		display: flex;
 	}
+	&__item:first-child &__link{
+		padding:26.4px 20px;
+	}
 	&__link{
 		text-transform: uppercase;
 		text-decoration: none;

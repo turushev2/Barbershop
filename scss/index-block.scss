@@ -89,9 +89,15 @@
 		line-height: 15px;
 		box-sizing: border-box;
 		border: 2px solid #000;
+		transition:.4s;
 		&:nth-child(2n+1){
 			margin-bottom: 20px;
 			margin-right: 20px;
 		}
 	}
+	&__field:hover,
+	&__field:focus { 
+	outline: none;
+    border: 2px solid #663d15;
+    }
 }

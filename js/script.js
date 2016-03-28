@@ -33,7 +33,7 @@ enterBtn.addEventListener("click",function(e){
 window.addEventListener("keydown",function(e){
 	if(e.keyCode===27){
 		enterForm.classList.add("enter-form--disabled");
-		setTimeout(close , 1000);
+		setTimeout(close , 900);
 	}
 })
 
@@ -66,7 +66,7 @@ overlay.addEventListener("click",function(e){
 
 exit.addEventListener("click",function(e){
 	enterForm.classList.add("enter-form--disabled");
-	setTimeout(close , 1000);
+	setTimeout(close , 900);
 })
 
 // SLIDER

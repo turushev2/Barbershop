@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Borodinsky</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+<div class="overlay"></div>
+  <header class="main-header clearfix">
+    <div class="container">
+      <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="index.html" class="main-nav__link"><img src="img/logo_little.png" alt=""></a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Информация</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Новости</a></li>
+        <li class="main-nav__item"><a href="price.html" class="main-nav__link">Прайс-лист</a></li>
+        <li class="main-nav__item"><a href="shop.html" class="main-nav__link">Магазин</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+      </ul>
+      </nav>
+      <div class="main-header__user-block"><a href="#" class="main-header__enter">Вход</a></div>
+    </div>
+  </header>
+  <form class="enter-form">
+    <span class="enter-form__exit"></span>
+    <p class="title">Личный кабинет</p>
+    <p class="enter-form__instruction">Введите пожалуйста свой логин и пароль</p>
+    <div class="enter-form__login-wrapper">
+      <input type="text" class="enter-form__login" placeholder="Логин">
+    </div>
+    <div class="enter-form__password-wrapper">
+      <input type="text" class="enter-form__password" placeholder="Пароль">
+    </div>
+    <div class="enter-form__options">
+      <input type="checkbox" class="checkbox" id="enter-form__remember">
+      <label for="enter-form__remember">ЗАПОМНИТЕ МЕНЯ</label>
+      <a class="enter-form__forget">Я забыл пароль</a>
+    </div>
+    <button type="submit">Войти</button>
+  </form>
+<main class="item">
+  <div class="container">
+    <div class="item-header">
+      <h1 class="item-header__h1">Средства для ухода</h1>
+      <ul class="item-menu">
+        <li class="item-menu__element"><a href="item.html" class="item-menu__element-link">Главная</a></li>
+        <li class="item-menu__element"><a href="" class="item-menu__element-link">Магазин</a></li>
+        <li class="item-menu__element"><a href="" class="item-menu__element-link">Средства для ухода</a></li>
+      </ul>
+    </div>
+  <div class="item__wrapper">
+ <form class="filters">
+       <fieldset class="filters__features">
+        <h2 class="filters__small-title">Производители:</h2>
+          <input type="checkbox" id = "slider"><label for="slider">Слайдер</label>
+          <input type="checkbox" id = "features-block"><label for="features-block">Блок преимуществ</label>
+          <input type="checkbox" id = "news"><label for="news">Новости</label>
+          <input type="checkbox" id = "gallery"><label for="gallery">Галлерея</label>
+          <input type="checkbox" id = "basket"><label for="basket">Корзина</label>
+        </fieldset>
+        <fieldset class="filters__grid-filter">
+        <h2 class="filters__small-title">Группы товаров:</h2>
+          <input type="radio" name = "grid-filter" id = "adaptive"><label for="adaptive">Адаптивная</label>
+          <input type="radio" name = "grid-filter" id = "fixed"><label for="fixed">Фиксированная</label>
+          <input type="radio" name = "grid-filter" id = "flexible"><label for="flexible">Резиновая</label>
+        </fieldset>
+        <button class = "btn" type="submit">Показать</button>
+    </form>
+  <div class="products">
+  <div class="products__item">
+  <div class="products__item-img">
+    <img src="img/product1.1little.jpg" alt="">
+  </div> 
+  <div class="products__item-content">
+     <h2 class="products__item-title">Набор для путешествий "BAXTER OF CALIFORNIA"</h2>
+    <div class="products__item-buttons">
+      <div class="products__item-price">2 990 РУБ</div>
+      <a href="" class="btn btn--small">Купить</a>
+    </div>
+  </div>  
+  </div>
+  <div class="products__item">
+  <div class="products__item-img">
+    <img src="img/product2.jpg" alt="">
+  </div> 
+  <div class="products__item-content">
+     <h2 class="products__item-title">Увлажняющий кондиционер "BAXTER OF CALIFORNIA"</h2>
+    <div class="products__item-buttons">
+      <div class="products__item-price">2 990 РУБ</div>
+      <a href="" class="btn btn--small">Купить</a>
+    </div>
+  </div>  
+  </div>
+   <div class="products__item">
+  <div class="products__item-img">
+    <img src="img/product3.jpg" alt="">
+  </div> 
+  <div class="products__item-content">
+     <h2 class="products__item-title">Гель для волос <br>"SUAVECITO"</h2>
+    <div class="products__item-buttons">
+      <div class="products__item-price">2 990 РУБ</div>
+      <a href="" class="btn btn--small">Купить</a>
+    </div>
+  </div>  
+  </div>
+   <div class="products__item">
+  <div class="products__item-img">
+    <img src="img/product4.jpg" alt="">
+  </div> 
+  <div class="products__item-content">
+     <h2 class="products__item-title">Глина для укладки волос "AMERICAN CREW"</h2>
+    <div class="products__item-buttons">
+      <div class="products__item-price">2 990 РУБ</div>
+      <a href="" class="btn btn--small">Купить</a>
+    </div>
+  </div>  
+  </div>
+   <div class="products__item">
+  <div class="products__item-img">
+    <img src="img/product5.jpg" alt="">
+  </div> 
+  <div class="products__item-content">
+     <h2 class="products__item-title">Гель для волос "AMERICAN CREW"</h2>
+    <div class="products__item-buttons">
+      <div class="products__item-price">2 990 РУБ</div>
+      <a href="" class="btn btn--small">Купить</a>
+    </div>
+  </div>  
+  </div>
+   <div class="products__item">
+  <div class="products__item-img">
+    <img src="img/product6.jpg" alt="">
+  </div> 
+  <div class="products__item-content">
+     <h2 class="products__item-title">Набор для бритья "BAXTER OF CALIFORNIA"</h2>
+    <div class="products__item-buttons">
+      <div class="products__item-price">2 990 РУБ</div>
+      <a href="" class="btn btn--small">Купить</a>
+    </div>
+  </div>  
+  </div>
+    <div class="products__pagination">
+      <a href="#" class="btn btn--pagination">1</a>
+      <a href="#" class="btn btn--pagination">2</a>
+      <a href="#" class="btn btn--pagination">3</a>
+      <a href="#" class="btn btn--pagination">4</a>
+    </div>
+  </div>
+</div>
+</main>
+  <footer class="main-footer">
+    <div class="container">
+      <div class="main-footer__contacts">
+        <p>БАРБЕРШОП «БОРОДИНСКИЙ»</p>
+        <p>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8</p>
+        <a href="#">КАК НАС НАЙТИ?</a>
+        <p>Телефон 8 800 555 35 35</p>
+      </div>
+      <div class="main-footer__social">
+        <p>Давайте дружить</p>
+        <div class="social">
+          <a href="#" class="social__link social__vk"></a>
+          <a href="#" class="social__link social__fb"></a>
+          <a href="#" class="social__link social__inst"></a>
+        </div>
+      </div>
+      <div class="main-footer__copy">
+        <div class="main-footer__copy-wrapper">
+          <p>Разработано</p>
+          <a href="#" class="btn">HTMLACADEMY.RU</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

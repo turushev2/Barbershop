@@ -12,16 +12,34 @@
     <div class="container">
       <nav class="main-nav">
       <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="index.html" class="main-nav__link"><img src="img/logo_little.png" alt=""></a>
         <li class="main-nav__item"><a href="#" class="main-nav__link">Информация</a></li>
         <li class="main-nav__item"><a href="#" class="main-nav__link">Новости</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Прайс-лист</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Магазин</a></li>
+        <li class="main-nav__item"><a href="price.html" class="main-nav__link">Прайс-лист</a></li>
+        <li class="main-nav__item"><a href="shop.html" class="main-nav__link">Магазин</a></li>
         <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
       </ul>
       </nav>
       <div class="main-header__user-block"><a href="#" class="main-header__enter">Вход</a></div>
     </div>
   </header>
+  <form class="enter-form">
+    <span class="enter-form__exit"></span>
+    <p class="title">Личный кабинет</p>
+    <p class="enter-form__instruction">Введите пожалуйста свой логин и пароль</p>
+    <div class="enter-form__login-wrapper">
+      <input type="text" class="enter-form__login" placeholder="Логин">
+    </div>
+    <div class="enter-form__password-wrapper">
+      <input type="text" class="enter-form__password" placeholder="Пароль">
+    </div>
+    <div class="enter-form__options">
+      <input type="checkbox" class="checkbox" id="enter-form__remember">
+      <label for="enter-form__remember">ЗАПОМНИТЕ МЕНЯ</label>
+      <a class="enter-form__forget">Я забыл пароль</a>
+    </div>
+    <button type="submit">Войти</button>
+  </form>
 <main class="item">
   <div class="container">
     <div class="item-header">
